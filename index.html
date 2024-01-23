@@ -44,11 +44,11 @@
 <body class="font-manrope">
 
     <!-- header section start -->
-    <header class="container mx-auto lg:w-[1200px]">
+    <header class="container mx-auto lg:w-[1200px] mb-12 lg:mb-24">
 
         <!-- nav section start -->
-        <nav class="my-5 md:my-10">
-            <div class="navbar bg-base-100">
+        <nav class=" w-11/12 mx-auto my-5 md:my-10">
+            <div class="navbar bg-base-100 px-0">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost p-0 lg:hidden">
@@ -67,7 +67,7 @@
                             <li class="text-base font-bold "><a>Contact</a></li>
                         </ul>
                     </div>
-                    <a class="btn gap-0 btn-ghost text-2xl lg:text-4xl font-extrabold">
+                    <a class="btn gap-0 lg:px-0 btn-ghost text-2xl lg:text-4xl font-extrabold">
                         Hockey<span class="text-color-primary">’</span>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
@@ -88,33 +88,47 @@
 
         <!-- slider section start -->
         <section class="w-11/12 mx-auto">
-            <!-- slider container -->
-            <div class="carousel w-full h-[200px] md:h-[300px] lg:h-[500px] rounded-2xl">
-                <!-- slide 1 -->
-                <div id="slide1" class="carousel-item relative w-full">
-                    <img src="Images/1.png" class="w-full" />
-                    <div class="absolute flex justify-start transform -translate-y-1/2 left-5 right-5 bottom-3 gap-10">
-                        <a href="#slide3" class="btn btn-circle">❮</a>
-                        <a href="#slide2" class="btn btn-circle">❯</a>
+            <div class="relative">
+                <!-- slider container -->
+                <div class="carousel w-full h-[200px] md:h-[400px] lg:h-[500px] rounded-2xl">
+                    <!-- slide 1 -->
+                    <div id="slide1" class="carousel-item relative w-full">
+                        <img src="Images/1.png" class="w-full" />
+                        <div
+                            class="absolute flex justify-start transform -translate-y-1/2 left-5 right-5 bottom-3 gap-10">
+                            <a href="#slide3" class="btn btn-circle">❮</a>
+                            <a href="#slide2" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <!-- slide 2 -->
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <img src="Images/hockey-1.webp" class="w-full" />
+                        <div
+                            class="absolute flex justify-start transform -translate-y-1/2 left-5 right-5 bottom-3 gap-10">
+                            <a href="#slide1" class="btn btn-circle">❮</a>
+                            <a href="#slide3" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <!-- slide 3 -->
+                    <div id="slide3" class="carousel-item relative w-full">
+                        <img src="Images/hockey-2.jpg" class="w-full" />
+                        <div
+                            class="absolute flex justify-start transform -translate-y-1/2 left-5 right-5 bottom-3 gap-10">
+                            <a href="#slide2" class="btn btn-circle">❮</a>
+                            <a href="#slide1" class="btn btn-circle">❯</a>
+                        </div>
                     </div>
                 </div>
-                <!-- slide 2 -->
-                <div id="slide2" class="carousel-item relative w-full">
-                    <img src="Images/hockey-1.webp" class="w-full" />
-                    <div class="absolute flex justify-start transform -translate-y-1/2 left-5 right-5 bottom-3 gap-10">
-                        <a href="#slide1" class="btn btn-circle">❮</a>
-                        <a href="#slide3" class="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <!-- slide 3 -->
-                <div id="slide3" class="carousel-item relative w-full">
-                    <img src="Images/hockey-2.jpg" class="w-full" />
-                    <div class="absolute flex justify-start transform -translate-y-1/2 left-5 right-5 bottom-3 gap-10">
-                        <a href="#slide2" class="btn btn-circle">❮</a>
-                        <a href="#slide1" class="btn btn-circle">❯</a>
-                    </div>
+
+                <!-- slider text container section -->
+                <div class="bg-[#131318] md:p-8 p-4 rounded-2xl w-full md:w-3/6 md:absolute md:bottom-8 md:right-7 ">
+                    <h3 class="font-extrabold md:text-2xl text-xl  text-white pb-4">Meet all the heroes from the field</h3>
+                    <p class="font-medium text-xs text-left  text-[#ffffff99] ">The Men's FIH Hockey World Cup is an international
+                        field hockey competition organised by the International Hockey Federation (FIH).</p>
                 </div>
             </div>
+
+
         </section>
 
     </header>
